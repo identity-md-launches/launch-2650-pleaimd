@@ -1,0 +1,24 @@
+{
+  "kind": "custom_token",
+  "token": {
+    "contract": "PleaToken",
+    "name": "pleaimd",
+    "symbol": "PLEA",
+    "decimals": 18,
+    "constructorArgs": [],
+    "totalSupply": "1000000000000000000000000000"
+  },
+  "contracts": [],
+  "pool": {
+    "pairedCurrency": "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7",
+    "fee": 12500,
+    "tickSpacing": 60,
+    "initialPrice": "79228162514264337593543950336"
+  },
+  "economics": {
+    "poolBps": 7000,
+    "initialMarketCapWei": "2500000000000000000000",
+    "remainderTo": "0xee2aaa315cf7ed169f93148d30d24af9318dbb66"
+  },
+  "notes": "PleaToken mints 1,000,000,000 PLEA with 18 decimals once to msg.sender in its argument-free constructor. Transfers have no fees. Holders may burn their own tokens, reducing totalSupply; there is no subsequent minting, owner, or privileged role. No application contracts are deployed. pool.initialPrice is provenance only; the deployer derives the opening price from economics.initialMarketCapWei and token.totalSupply."
+}
